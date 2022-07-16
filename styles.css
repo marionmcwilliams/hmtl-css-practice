@@ -1,0 +1,17 @@
+#image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #img-div {
+    display: grid;
+    justify-items: center;
+  }
+  
+  #tribute-info{
+    background-color: #EEEFEF;
+  }
+  
+  body{
+    font-family: sans-serif;
+  }

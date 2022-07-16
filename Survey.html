@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Website</title>
+    <link rel="stylesheet" href="SurveyStyles.css">
+</head>
+<body>
+    <!-- Title and Description -->
+    <h1 id="title">This is a Survey Form</h1>
+    <p id="description">The purpose of this survey form is to test my ability to design an application using a variety of skills learned through the FreeCodeCamp Course.</p>
+
+<!-- Survey Form -->
+<form id="survey-form">
+<div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+</div>
+
+<div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+</div>
+
+<div class="form-group"> 
+    <label id="age-label" for="age">Age (optional)</label>
+    <input type="number" id="age" min="1" max="99" placeholder="Age">
+</div>
+
+<div class="form-group">
+    <label id="dropdown-label" for="age">This is a dropdown menu with various options</label>
+    <select id="dropdown">
+        <option disabled selected value>Select an option</option>
+        <option value="a">Option A</option>
+        <option value="b">Option B</option>
+    </select>
+</div>
+
+<div class="form-group">
+<h2>Would you recommend this site to a friend?</h2>
+<label><input type="radio" name="recommend" value="yes" class="input-radio">Yes</label>
+<label><input type="radio" name="recommend" value="maybe" class="input-radio">Maybe</label>
+<label><input type="radio" name="recommend" value="not-sure" class="input-radio">Not Sure</label>
+</div>
+
+<div class="form-group">
+<h2>How can the site be improved?</h2>
+<label><input type="checkbox" name="feedback" value="diff-colors" class="input-checkbox">A more interesting color scheme</label>
+<label><input type="checkbox" name="feedback" value="diff-fonts" class="input-checkbox">A more readible font</label>
+<label><input type="checkbox" name="feedback" value="diff-layout" class="input-checkbox">A more appealing page layout</label>
+</div>
+
+<div class="form-group">
+<h2>Any comments or concerns?</h2>
+<textarea id="comments" rows="8" cols="80">Enter your comments here...</textarea>
+</div>
+
+<div class="form-group">
+<input type="submit" value="Submit" id="submit">
+</div> 
+</form>
+</body>
+</html>
