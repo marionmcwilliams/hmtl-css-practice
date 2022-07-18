@@ -13,6 +13,7 @@ header {
     justify-content: space-around;
     min-height: 75px;
     padding: 0 20px;
+    top: 0;
     background-color: white;
     align-items: center;
     
@@ -71,6 +72,13 @@ blockquote {
 
 #pricing {
     margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+
+#pricing-container {
     display: flex;
     justify-content: center;
 }
