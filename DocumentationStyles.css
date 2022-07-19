@@ -1,3 +1,86 @@
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#navbar header {
+    font-size: 1.8em;
+    width: 100%;
+    border-bottom: solid black;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.main-section header {
+    font-size: 1.8em;
+}
+
+:root {
+    --nav-direction: column;
+    --nav-width: 300px;
+    --nav-height: 100%;
+    --main-padding-top: auto;
+    --main-padding-left: 300px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: var(--nav-height, 100%);
+    width: var(--nav-width, 300px);
+    text-align: center;
+    justify-content: flex-start;
+    border-right: solid black;
+    min-height: 75px;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --nav-direction: row;
+        --nav-width: 100%;
+        --nav-height: 134px;
+        --main-padding-top: 200px;
+        --main-padding-left: 0;
+    }
+}
+
+#navbar a {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#links {
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: var(--nav-direction, column);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    border-bottom: solid black;
+}
+
+#main-doc {
+    padding-top: var(--main-padding-top, auto);
+    padding-left: var(--main-padding-left, 300px);
+}
+
+.code-div {
+    background-color: #c9c7c5;
+    padding: 5px;
 }
