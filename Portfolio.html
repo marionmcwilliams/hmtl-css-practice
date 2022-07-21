@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5983001680.js" crossorigin="anonymous"></script>
     <title>My Portfolio</title>
+    <link rel="icon" type="img/x-icon" href="myprologo - Copy.png">
     <link rel="stylesheet" href="PortfolioStyles.css">
 </head>
 <body>
+    <!--Navigation-->
+    <nav id="navbar">
+        <ul id="nav-list">
+            <li><a class="nav-link" href="">About</a></li>
+            <li><a class="nav-link" href="">Work</a></li>
+            <li><a class="nav-link" href="">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Main Page Content-->
+    <main id="main-content">
     <!--Welcome Section w/ Hero Image-->
     <section id="welcome-section">
         <h1>Welcome to My Portfolio! My name is Marion</h1>
@@ -16,7 +29,33 @@
 
     <!--Projects Section-->
     <section id="projects">
-
+        <div id="portfolio-grid">
+            <a href="#" target="_blank" class="project-tile"><img src="https://www.elmhurst.edu/wp-content/uploads/2018/12/5-skills-project-management-degree-elmhurst-college-infographic-thumb.jpg" width="453" height="237" alt="project">
+                <p class="project-title">Project A</p>
+            </a>
+            <a href="#" target="_blank" class="project-tile"><img src="https://www.ntaskmanager.com/wp-content/uploads/2020/10/what-is-project-design-700x280.png" width="453" height="237" alt="project">
+                <p class="project-title">Project B</p>
+            </a>
+            <a href="#" target="_blank" class="project-tile"><img src="https://www.publichealthnotes.com/wp-content/uploads/2020/03/project-planning-header@2x.png" width="453" height="237" alt="project">
+                <p class="project-title">Project C</p>
+            </a>
+            <a href="#" target="_blank" class="project-tile"><img src="https://www.ntaskmanager.com/wp-content/uploads/2020/02/What-is-a-Project-1-scaled.jpg" width="453" height="237" alt="project">
+                <p class="project-title">Project D</p>
+            </a>
+        </div>
     </section>
+
+    <!--Contact Information-->
+    <section id="contact">
+        <h2 id="contact-header">I can't wait to work with you!</h2>
+        <div id="contact-links">
+            <a href="#" target="_blank" class="contact-details" id="profile-link"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" target="_blank" class="contact-details"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="#" target="_blank" class="contact-details"><i class="fa-solid fa-envelope"></i> Send an Email</a>
+        </div>
+    </section>
+    </main>
+
+    <footer></footer>
 </body>
 </html>
